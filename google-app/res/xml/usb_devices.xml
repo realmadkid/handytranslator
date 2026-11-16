@@ -1,0 +1,5 @@
+<resources>
+ <!-- Runtime Leonardo IDs only. Do not match the bootloader or arbitrary MIDI devices. -->
+ <usb-device vendor-id="9025" product-id="32822"/>
+ <usb-device vendor-id="10755" product-id="32822"/>
+</resources>

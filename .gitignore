@@ -1,0 +1,28 @@
+# Generated outputs and locally installed toolchains
+**/build/
+/tools/
+/deliverables/
+
+# Local credentials and signing material
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+local.properties
+key.properties
+service-account*.json
+*-credentials.json
+
+# Editor / OS / Python caches
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
