@@ -61,8 +61,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File google-app\build.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File build-firmware.ps1
 ```
 
-앱: JDK 17, Android SDK platform 35/build-tools 35.0.1. 
-펌웨어: 로컬 Arduino CLI, AVR Leonardo 및 MIDIUSB. 
+앱: JDK 17, Android SDK platform 35/build-tools 35.0.1.
+펌웨어: 로컬 Arduino CLI, AVR Leonardo 및 MIDIUSB.
 업데이트 서명을 유지하려면 `google-app/build/prototype.keystore`를 보존한다. 키는 배포 ZIP에 넣지 않는다.
 
 자세한 환경 준비 및 배포 절차는 [빌드·배포 안내](docs/BUILD.md)를 확인한다.
