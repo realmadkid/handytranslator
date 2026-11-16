@@ -1,4 +1,4 @@
-# HandyTranslator Google · 개인용 시제품 v0.3
+# HandyTranslator ·
 
 2026-11-16. Google Cloud Translation을 사용하는 Android 9+ 개인용 앱이다.
 
