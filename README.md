@@ -61,12 +61,18 @@ powershell -NoProfile -ExecutionPolicy Bypass -File google-app\build.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File build-firmware.ps1
 ```
 
-앱: JDK 17, Android SDK platform 35/build-tools 35.0.1. 펌웨어: 로컬 Arduino CLI, AVR Leonardo 및 MIDIUSB. 업데이트 서명을 유지하려면 `google-app/build/prototype.keystore`를 보존한다. 키는 배포 ZIP에 넣지 않는다.
+앱: JDK 17, Android SDK platform 35/build-tools 35.0.1. 
+펌웨어: 로컬 Arduino CLI, AVR Leonardo 및 MIDIUSB. 
+업데이트 서명을 유지하려면 `google-app/build/prototype.keystore`를 보존한다. 키는 배포 ZIP에 넣지 않는다.
 
 자세한 환경 준비 및 배포 절차는 [빌드·배포 안내](docs/BUILD.md)를 확인한다.
 
 ## 검증 범위
 
-사용자 폰에서 화면 꺼짐 양방향 번역, 10분 이상 대기 후 입력, 보드 연결 자동 시작을 확인했다. v0.3 UI는 작은 화면·가로·200% 글꼴·넓은 화면의 레이아웃 접근성을 검사했다. 모든 기종/해상도 또는 Android 9 실기까지 검증한 것은 아니다.
+사용자 폰에서 화면 꺼짐 양방향 번역, 10분 이상 대기 후 입력, 보드 연결 자동 시작을 확인했다. 
+v0.3 UI는 작은 화면·가로·200% 글꼴·넓은 화면의 레이아웃 접근성을 검사했다. 
+모든 기종/해상도 또는 Android 9 실기까지 검증한 것은 아니다.
 
-세션은 최대 2시간, 입력은 최대 45초다. 음성인식의 침묵 종료 후 재시작 사이 짧은 누락이 있을 수 있다. 잠긴 상태의 최초 연결은 잠금 해제가 필요할 수 있다. 음성은 기본 인식 제공자에게, 인식된 문장은 Google Cloud에 전송될 수 있다. 앱은 대화를 파일로 저장하지 않는다.
+세션은 최대 2시간, 입력은 최대 45초다. 
+음성인식의 침묵 종료 후 재시작 사이 짧은 누락이 있을 수 있다. 잠긴 상태의 최초 연결은 잠금 해제가 필요할 수 있다. 
+음성은 기본 인식 제공자에게, 인식된 문장은 Google Cloud에 전송될 수 있다. 앱은 대화를 파일로 저장하지 않는다.
