@@ -2,8 +2,8 @@
 
 2026-11-16. Google Cloud Translation을 사용하는 Android 9+ 개인용 앱이다.
 
-- 설치: `deliverables/HandyTranslator-Google-v0.3.apk` (기존 Google 앱 위에 업데이트 설치)
-- 새 소스: `google-app/` · 패키지 `com.handytranslator.google`
+- 설치: `deliverables/HandyTranslator-Google-v0.3.apk`
+- 소스: `google-app/` · 패키지 `com.handytranslator.google`
 - **보드 펌웨어와 D4/D5 배선은 바꿀 필요가 없다.**
 
 ## v0.3 화면
