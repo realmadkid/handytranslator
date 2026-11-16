@@ -64,3 +64,11 @@ v0.1은 현재 사용자 폰에서 화면 꺼짐 양방향 번역과 10분 이�
 - Google Cloud Translation을 단일 번역 경로로 확정하고 루트 사용법/설계 문서를 현재 구현에 맞게 재작성.
 - 사용 안내 문구를 정리한 v0.3 APK 재빌드, CoreTest/UsageBudgetTest 및 서명 검사 통과. 번역 및 보드 처리 로직 변경 없음.
 - 현재 APK/소스 ZIP/해시를 갱신. 최신 배포본과 공통 펌웨어를 유지.
+
+## v0.3.1 앱 아이콘 (2026-11-16)
+
+- 한·일 글자를 윤곽선 벡터로 구성하고 양방향 화살표 추가. 앱 아이콘과 원형 아이콘에 적용.
+- Android 13+ 테마 아이콘용 단색 레이어 제공. Android 9+ 기본 adaptive icon 유지.
+- versionCode 4, versionName 0.3.1-prototype. 게시된 v0.3 산출물은 덮어쓰지 않음.
+- 빌드·CoreTest·UsageBudgetTest·APK 서명 검사 통과. AAPT에서 아이콘 리소스 포함 확인.
+- 연결된 사용자 폰에 업데이트 설치 Success. 다양한 런처의 실제 마스크/테마 표현은 별도 실기 확인 대상.

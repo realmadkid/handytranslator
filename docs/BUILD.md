@@ -14,7 +14,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File google-app\build.ps1
 # .\google-app\build.ps1 -Jdk 'C:\Java\jdk-17' -Sdk 'C:\Android\Sdk'
 ```
 
-빌드 중 버튼/MIDI 및 요청 문자 제한 테스트를 실행하고 APK 서명을 검사한다. 결과는 `deliverables/HandyTranslator-Google-v0.3.apk`다.
+빌드 중 버튼/MIDI 및 요청 문자 제한 테스트를 실행하고 APK 서명을 검사한다. 결과는 `deliverables/HandyTranslator-Google-v0.3.1.apk`다.
 
 `google-app/build/prototype.keystore`는 최초 빌드에서 생성하는 개인 시제품용 서명 키다. 기존 앱 업데이트와 Google API Android 앱 제한 지문을 유지하려면 이 파일을 로컬에 보존한다. Git 또는 공개 ZIP에는 넣지 않는다. 새 컴퓨터에서 다른 키로 빌드하면 APK 지문도 달라지므로 [설정 안내](GOOGLE-SETUP.md)의 인증서 지문을 그대로 적용하지 않는다. 현재 빌드는 개인 시제품용이며 일반 배포용 서명 관리는 별도다.
 

@@ -60,8 +60,8 @@ public class MainActivity extends Activity {
   add(box,"테스트",()->new AlertDialog.Builder(this).setTitle("테스트").setItems(new String[]{"10초 뒤 음성 출력 · API 미사용","한 → 일 문장 · API 사용","일 → 한 문장 · API 사용"},(dialog,which)->{TranslatorService service=service();if(service==null)return;if(which==0)service.screenOffTest();else service.sample(which-1);showPage(false);}).setNegativeButton("닫기",null).show());
   add(box,"음성 설정",()->open(new Intent("com.android.settings.TTS_SETTINGS")));
   add(box,"배터리 설정",()->open(new Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)));
-  add(box,"사용 안내",()->new AlertDialog.Builder(this).setTitle("사용 안내 · v0.3").setMessage("보드 연결 시 이 앱을 기본으로 선택하세요. 처음 시작할 때는 잠금 해제가 필요할 수 있습니다. 시작 후에는 화면을 꺼도 됩니다.\n\n준비 진동 후 말하고 버튼을 놓으세요. 한국어·일본어 오프라인 읽기 음성이 필요합니다.\n\n음성은 폰의 인식 제공자에게, 인식된 텍스트는 Google Cloud에 전송됩니다. 앱은 대화를 파일로 저장하지 않습니다.\n\n앱 한도: 일 14,000 / 월 450,000 문자. Cloud 무료 범위는 다른 사용량과 합산되므로 콘솔 할당량도 설정하세요.\n\n최대 입력 45초, 세션 2시간. 침묵으로 인식기가 재시작할 때 짧은 누락이 생길 수 있습니다.").setPositiveButton("확인",null).show());
-  text(box,"Google · v0.3",13);
+  add(box,"사용 안내",()->new AlertDialog.Builder(this).setTitle("사용 안내 · v0.3.1").setMessage("보드 연결 시 이 앱을 기본으로 선택하세요. 처음 시작할 때는 잠금 해제가 필요할 수 있습니다. 시작 후에는 화면을 꺼도 됩니다.\n\n준비 진동 후 말하고 버튼을 놓으세요. 한국어·일본어 오프라인 읽기 음성이 필요합니다.\n\n음성은 폰의 인식 제공자에게, 인식된 텍스트는 Google Cloud에 전송됩니다. 앱은 대화를 파일로 저장하지 않습니다.\n\n앱 한도: 일 14,000 / 월 450,000 문자. Cloud 무료 범위는 다른 사용량과 합산되므로 콘솔 할당량도 설정하세요.\n\n최대 입력 45초, 세션 2시간. 침묵으로 인식기가 재시작할 때 짧은 누락이 생길 수 있습니다.").setPositiveButton("확인",null).show());
+  text(box,"Google · v0.3.1",13);
  }
  private void setText(TextView view,String value){if(view!=null&&!value.contentEquals(view.getText()))view.setText(value);}
  private void refreshUi(){

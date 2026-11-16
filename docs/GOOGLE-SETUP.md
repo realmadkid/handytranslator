@@ -2,9 +2,13 @@
 
 2026-11-16. Google Cloud Translation을 사용하는 Android 9+ 개인용 앱이다.
 
-- 설치: `deliverables/HandyTranslator-Google-v0.3.apk`
+- 설치: `deliverables/HandyTranslator-Google-v0.3.1.apk`
 - 소스: `google-app/` · 패키지 `com.handytranslator.google`
 - **보드 펌웨어와 D4/D5 배선은 바꿀 필요가 없다.**
+
+## v0.3.1 아이콘
+
+한·일 글자와 양방향 화살표를 포함한 벡터 런처 아이콘을 적용했다. 원형 등 런처 마스크와 Android 13+ 테마 아이콘용 단색 레이어를 제공한다. v0.3과 같은 서명 키를 사용하므로 기존 앱 위에 업데이트 설치할 수 있다.
 
 ## v0.3 화면
 

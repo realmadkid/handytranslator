@@ -1,11 +1,15 @@
 # HandyTranslator · Google 두 버튼 음성 번역기
 
-**Google Cloud Translation을 프로젝트의 번역 서비스로 확정한다.** 현재 버전은 Google v0.3이다.
+**Google Cloud Translation을 프로젝트의 번역 서비스로 확정한다.** 현재 버전은 Google v0.3.1이다.
 
 [GitHub 저장소](https://github.com/realmadkid/handytranslator) · [라이선스](LICENSE)
 
 한국어와 일본어를 두 개의 USB 물리 버튼으로 번역한다. 버튼을 누르고 말한 다음 놓으면, 반대 언어로 번역해 읽는다. 복잡한 설정없이 직관적으로 버튼을 누르고 말하고, 버튼을 때면 된다. 활성 세션에서는 화면을 완전히 끄고 사용할 수 있다.
 백그라운드로 동작하므로, 음악을 듣거나 유튜브를 보는 중에도 버튼을 누르면 바로 음성을 인식하고 통역을 시작한다.
+
+## 앱 아이콘
+
+<img src="docs/images/app-icon.svg" alt="한과 일이 들어간 양방향 번역 앱 아이콘" width="120">
 
 ## 프로토타입
 
@@ -15,7 +19,7 @@
 
 ## 시작하기
 
-1. Google v0.3 APK 설치. 로컬 빌드 결과는 `deliverables/HandyTranslator-Google-v0.3.apk`에 생성된다.
+1. [Google v0.3.1 APK 다운로드](https://github.com/realmadkid/handytranslator/releases/download/v0.3.1/HandyTranslator-Google-v0.3.1.apk) 후 설치. 로컬 빌드 결과는 `deliverables/HandyTranslator-Google-v0.3.1.apk`에 생성된다.
 2. [Google Cloud 설정 안내](docs/GOOGLE-SETUP.md)에 따라 프로젝트·API 키·할당량 설정.
 3. 앱의 **설정**에서 API 키 입력, 폰에 한국어·일본어 오프라인 TTS 음성 설치.
 4. **시작**을 누르고 마이크 권한 허용. 보드를 연결해 두 버튼 사용.

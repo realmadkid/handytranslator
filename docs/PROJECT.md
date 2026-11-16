@@ -1,6 +1,6 @@
 # HandyTranslator · 확정 프로젝트 방향
 
-2026-11-16: **Google Cloud Translation Basic v2 NMT를 번역 서비스로 확정한다.** 현재 앱은 Google v0.3이며, 이 저장소는 Google 기반 두 버튼 번역기를 개발·유지한다.
+2026-11-16: **Google Cloud Translation Basic v2 NMT를 번역 서비스로 확정한다.** 현재 앱은 Google v0.3.1이며, 이 저장소는 Google 기반 두 버튼 번역기를 개발·유지한다.
 
 ## 목표
 

@@ -30,7 +30,9 @@ try{Run "$bt\aapt.exe" @('add',"$build\unsigned.apk",'classes.dex')}finally{Pop-
 Run "$bt\zipalign.exe" @('-f','4',"$build\unsigned.apk","$build\aligned.apk")
 $key=Join-Path $build 'prototype.keystore'
 if(!(Test-Path $key)){Run "$Jdk\bin\keytool.exe" @('-genkeypair','-keystore',$key,'-storepass','android','-keypass','android','-alias','prototype','-keyalg','RSA','-keysize','2048','-validity','3650','-dname','CN=HandyTranslator Prototype')}
-$apk=Join-Path $release 'HandyTranslator-Google-v0.3.apk'
+[xml]$manifest=Get-Content (Join-Path $PSScriptRoot 'AndroidManifest.xml') -Raw
+$version=$manifest.manifest.GetAttribute('versionName','http://schemas.android.com/apk/res/android').Split('-')[0]
+$apk=Join-Path $release "HandyTranslator-Google-v$version.apk"
 Run "$Jdk\bin\java.exe" @('-jar',"$bt\lib\apksigner.jar",'sign','--ks',$key,'--ks-pass','pass:android','--key-pass','pass:android','--out',$apk,"$build\aligned.apk")
 Run "$Jdk\bin\java.exe" @('-jar',"$bt\lib\apksigner.jar",'verify','--verbose',$apk)
 Get-FileHash $apk -Algorithm SHA256
